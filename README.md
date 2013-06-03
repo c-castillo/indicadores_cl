@@ -1,6 +1,6 @@
-# IndicadoresCl
+# IndicadoresCL
 
-TODO: Write a gem description
+Useful financial indicators used in Chile.
 
 ## Installation
 
