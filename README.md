@@ -1,24 +1,30 @@
 # IndicadoresCL
 
-Useful financial indicators used in Chile.
+Es una wrapper para el servicio XML disponible en http://indicadoresdeldia.cl/
 
-## Installation
+## Instalación
 
-Add this line to your application's Gemfile:
+Agrega la siguiente línea en tu Gemfile:
 
     gem 'indicadores_cl'
 
-And then execute:
+y ejecuta:
 
     $ bundle
 
-Or install it yourself as:
+O instala de forma manual:
 
     $ gem install indicadores_cl
 
-## Usage
+## Uso
 
-TODO: Write usage instructions here
+```ruby
+require 'indicadores_cl'
+
+indicadores = Indicadores::Chile.new
+puts "El valor del dolar es #{indicadores.dolar}"
+puts "El valor de la UF es #{indicadores.uf}"
+```
 
 ## Contributing
 
